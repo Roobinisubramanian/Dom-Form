@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="border: 1px solid black;width: 150%;">
+    <form action="">
+        <div class="container">
+            <div class="column">
+                <div class="col-md-4">
+                    <table>
+                        <head>
+                            <style>
+                                table,th,td{
+                                    border: 1px solid black;
+                                    border-collapse: collapse;
+                                    width: 1000px;
+                                    margin-top: 50px;
+                                    margin-left: 25px;
+                                }
+                            </style>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Address</th>
+                            <th>Pincode</th>
+                            <th>Gender</th>
+                            <th>Choice of Food</th>
+                            <th>State</th>
+                            <th>Country</th>
+                        </head>
+                        <body>
+                            <tr>
+                                <td>
+                                    <input type="text" id="fName">
+                                </td>
+                                <td>
+                                    <input type="text" id="lName">
+                                </td>
+                                <td>
+                                    <input type="text" id="Email">
+                                </td>
+                                <td>
+                                    <input type="text" id="Address">
+                                </td>
+                                <td>
+                                    <input type="text" id="Pincode">
+                                </td>
+                                <td>
+                                    <input type="text" id="Gender">
+                                </td>
+                                <td>
+                                    <div id ="food" style="display: inline-block;">
+                                        <form action ="/action_page.php" method="get">
+                                            <label for="Select Food"></label><br>
+                                            <select SF="SF" id="SF" multiple>
+                                                <option value="Select Food">Select Food</option>
+                                                <option value="Idly" id="op1">Idly</option>
+                                                <option value="Roast" id="op2">Roast</option>
+                                                <option value="Poori" id="op3">Poori</option>
+                                                <option value="Chapatti" id="op4">Poori</option>
+                                                <option value="Sambar idly" id="op5">Poori</option>
+                                                <option value="Masala Roast" id="op6">Poori</option>
+                                            </select>    
+                                        </form>
+                                    </div>
+                                </td>
+                                <td>
+                                    <input type="text" id="State">
+                                </td>
+                                <td>
+                                    <input type="text" id="Country">
+                                </td>
+                            </tr>
+                            
+                    </table>
+                    <br>
+                    <br>
+                    <button type="button" id="submit" style="background-color: aqua;   margin-left: 1000px; padding-right: 60px;">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="table"></div>
+        </div>
+    </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
